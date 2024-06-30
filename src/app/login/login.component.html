@@ -1,0 +1,26 @@
+  <body>
+    <div class="center">
+      <h1>Connexion</h1>
+      <form [formGroup]="loginForm" (ngSubmit)="submitLoginForm()">
+        <div class="txt_field">
+          <input type="email" id="typeEmailX-2" class="form-control form-control-lg" formControlName="email" required/>
+          <span></span>
+          <label>Adresse email</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" id="typePasswordX-2" class="form-control form-control-lg" formControlName="password" required>
+          <span></span>
+          <label>Mot de passe </label>
+        </div>
+        <div class="pass"></div>
+        <input type="submit" value="Login">
+        <div class="signup_link">
+          <div class="signup_link">
+            <a href="/register">Nouvel utilisateur? Créer un compte</a>
+          </div>
+          
+        </div>
+      </form>
+    </div>
+
+  </body>

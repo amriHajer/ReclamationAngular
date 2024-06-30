@@ -1,0 +1,40 @@
+/* CSS pour l'effet d'agrandissement sur hover */
+.enlarged {
+    transform: scale(1.2); /* Vous pouvez ajuster la valeur pour l'agrandissement souhaité */
+    transition: transform 0.3s ease; /* Une transition fluide pour l'effet d'agrandissement */
+    cursor: pointer; /* Curseur de type main pour indiquer qu'il est cliquable */
+}
+
+/* Styles pour le corps de la page */
+body{
+    background: #f7f7ff;
+    margin-top: 20px;
+}
+
+/* Styles pour les cartes */
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid transparent;
+    border-radius: .25rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 6px 0 rgb(218 218 253 / 65%), 0 2px 6px 0 rgb(206 206 238 / 54%);
+}
+
+/* Styles pour les marges à droite */
+.me-2 {
+    margin-right: .5rem!important;
+}
+
+/* Styles pour les images carrées */
+.square-image {
+    width: 110px; /* Largeur souhaitée pour l'image */
+    height: 110px; /* Hauteur souhaitée pour l'image (pour obtenir un carré) */
+    border-radius: 50%; /* Arrondi les coins pour créer un cercle */
+    object-fit: cover; /* Ajuste l'image pour qu'elle couvre complètement le carré sans être déformée */
+}

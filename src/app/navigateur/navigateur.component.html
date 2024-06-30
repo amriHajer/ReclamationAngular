@@ -1,0 +1,13 @@
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <span id="logo-text" class="logo-text">P T</span>
+    
+    <form class="d-flex">
+      <!-- Boutons "Connexion" et "Inscription" si l'utilisateur n'est pas connecté -->
+      <button *ngIf="!isLoggedIn" routerLink="/login" class="btn me-2 btn-outline-warning" type="button">Connexion</button>
+      <button *ngIf="!isLoggedIn" routerLink="/register" class="btn me-2 btn-outline-warning" type="button">Inscription</button>
+      <!-- Bouton "Logout" si l'utilisateur est connecté -->
+      <button *ngIf="isLoggedIn" (click)="logout()" class="btn me-2 btn-outline-warning" type="button">Déconnexion</button>
+    </form>
+  </div>
+</nav>
